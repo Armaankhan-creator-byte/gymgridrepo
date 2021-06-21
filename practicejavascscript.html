@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            practice javascript string function.
+        </title>
+    </head>
+    <body>
+        <script>
+            /*index starts from 0*/
+
+            var a="hello_armaan";
+            /*lastindexof function gives the last index of 'aa'i.e 9*/
+            var b=a.lastIndexOf('aa');
+            console.log(b);
+            /*indexof function gives the first index of 'll' i.e 2*/
+            b=a.indexOf("ll");
+            console.log(b);
+            /*a.substr() function provides the sub string lies between index of 6-12 where 12 is not included in the function means if we want to know the string from 6-12 then we have to give the last value as 13. */
+            console.log(a.substr(6,12));
+            /*slice is same as substr() function with littel difference is that slice includes negative values too*/
+            console.log(a.slice(2,5));
+            /*repalce() function will replace hell0 by its and output will be its_armaan.but the original string inside 'a' variable doesnot change.*/
+            console.log(a.replace('hello','its'));
+            console.log(a);
+            /*touppercase() function converts string to uppercase*/
+            console.log(a.toUpperCase());
+            console.log(a);
+            /*tolowercase() converts the string to lowercase.*/
+            console.log(a.toLowerCase());
+            /*trim() function removes the whitespaces from the string but only from start and end of the string not from the middle of string as k.trim() function gives the output as khan   boy*/
+            k="      khan  boy      "
+            console.log(k.trim());
+            /*concat() function concatinate the string with given string as output will be hello_armaanis a hero*/
+            console.log(a.concat('is a hero'));
+            /*charat() function returns the char placed at position written with in the bracket*/
+            console.log(a.charAt(2));
+            /*charcodeat() function returns the unasii value of character palced at 3 position i.e unasii value of l is 108*/
+            console.log(a.charCodeAt(3));
+            /*[] is used as silcing of string a[0] will give h in this case.*/
+            console.log(a[0]);
+        
+        </script>
+    </body>
+</html:5>
